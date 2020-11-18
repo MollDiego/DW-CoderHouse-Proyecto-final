@@ -1,0 +1,21 @@
+/*card del Index*/
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.cards-titulo-home{
+    color: $color-blanco;
+    text-decoration: none;
+    padding:20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.cards-content-home{
+    @include flexRow(space-around);
+}
+
+.cards-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

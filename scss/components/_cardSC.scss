@@ -1,0 +1,66 @@
+/*Cards de Servicios y conocenos*/
+$color-servicio: linear-gradient(90deg, #FF4E50 0%, #F9D423 100%);
+$color-conocenos: gray;
+@import '../utilities/mixins';
+
+@mixin sizes($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+.flex-colum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-conteiner{
+    color: azure;
+    height: 250px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    @include flexRow(space-around);
+    align-items: center;
+}
+
+.card-conteiner-servicio{
+    background: $color-servicio;
+    width: 800px;
+}
+
+.card-conteiner-conocenos{
+    background: $color-conocenos;
+    width: 850px;
+}
+
+.text-conteiner{
+    margin: 20px;
+}
+
+.text-conteiner-sm{
+    width: 300px;
+    text-align: center;
+}
+
+.text-conteiner-lg{
+    width: 600px;
+    text-align: start;
+}
+
+@media only screen and (max-width: 768px){
+    .card-conteiner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-conteiner-servicio{
+        @include sizes(300px,500px );
+    }
+
+    .card-conteiner-conocenos{
+        @include sizes(400px, 550px);
+    }
+
+    .text-conteiner-lg{
+        width: 350px;
+    }
+}

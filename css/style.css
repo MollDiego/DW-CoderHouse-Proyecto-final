@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.titulo{
+    color: white;
+    padding:20px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+.titulo--blue{
+    padding:50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 24px;
+}
+
+.img-home{
+    width: 500px;
+    padding-bottom: 30px;
+    transition: all 1s;
+}
+
+.img-home:hover{
+    transform: scale(1.1,1.1);
+}
+
+.text-welcome{
+    width: 500px;
+    color: azure;
+    font-size: large;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.icono-conteiner{
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    background: azure;
+    border-radius: 50%;
+    box-shadow: 9px 3px 10px 0px rgba(0,0,0,0.41);
+}
+
+.icono{
+    width: 100px;
+}
+
+.icono-text{
+    color: azure;
+    width: 300px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+/*Estilos del form*/
+
+.form-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    background: linear-gradient(90deg, #72C6EF 0%, #004E8F 100%);
+    border-radius: 5px;
+}
+
+.form-data{
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.form-item{
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-img{
+    width: 400px;
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+.content-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Animaciones*/
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes agrandar{
+    0%{
+        transform: scale(1,1);
+    }
+    40%{
+        transform: scale(1.15,1.15);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}

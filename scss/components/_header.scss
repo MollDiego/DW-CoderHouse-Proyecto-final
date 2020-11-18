@@ -1,0 +1,35 @@
+/*Header*/
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.header-grid{
+    grid-area: header;
+}
+
+header{
+    @include flexRow(space-between);    
+    align-items: center;
+    background-color: $color-negro;
+    color: $color-blanco;
+    font-family: 'Roboto', sans-serif;
+    img{
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+nav{
+ul{
+    margin: 0px;
+    padding-right: 50px;
+    li {
+        list-style: none;
+        display: inline;
+        padding-right: 10px;
+        a{
+            text-decoration: none!important;
+            color: $color-blanco!important;
+        }
+    }
+}
+}

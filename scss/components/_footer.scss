@@ -1,0 +1,22 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.footer{
+    @include flexRow(center);
+    align-items: center;
+    background-color: $color-negro;
+    color: $color-blanco;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-grid{
+    grid-area: footer;
+    position: absolute;
+}
+
+.footer-sin-grid{    
+    position: relative;
+}
+
