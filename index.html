@@ -9,6 +9,7 @@
     <meta name="keywords" content="Impresión 3D, Diseño 3D, reparación de impresoras 3D, San Juan, Argentina">
     <title>Moll3D</title>
     <link rel="icon" type="image/png" href="img/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,6 +17,8 @@
 <body>
     <header>
         <img src="img/logo.png" alt="logo">
+        <input class="check" type="checkbox" name="menu" id="checked">
+        <label for="checked"><img class="menu" src="img/menu-hamburgesa.svg" alt="menu hamburgesa"> </label>
         <nav>
             <ul>
                 <li>INICIO</li>
@@ -26,10 +29,10 @@
             </ul>
         </nav>
     </header>
-    <section class="background">
-        <div class="fila">
+    <section>
+        <div class="fila background">
             <div>
-                <h1 class="titulo">¡Bienvenido a Moll3D!</h1>
+                <h1 class="titulo titulo-index">¡Bienvenido a Moll3D!</h1>
                 <h2 class="subtitulo">Queremos ayudarte a darle vida a tus prototipos e ideas</h2>
                 <p class="text-welcome">Somos una empresa familiar que se encarga de imprimir las distintas necesidades
                     de
@@ -44,35 +47,64 @@
             </div>
             <img class="img-home" src="img/3d_model.svg" alt="modelo">
         </div>
-        <h2 style="text-align: center;"><a class="cards-titulo-home" href="pages/servicios.html">Nuestros Servicios</a>
+        <h2 class="servicios-home" data-aos="fade-up" data-aos-duration="2000"><a class="cards-titulo-home"
+                href="pages/servicios.html">Nuestros Servicios</a>
         </h2>
         <div class="cards-content-home">
             <div class="cards-home">
-                <div class="icono-conteiner"><img class="icono" src="img/3d-printer.svg" alt="impresiones"></div>
-                <h3 class="subtitulo">Imprimimos tus diseños 3D</h3>
-                <div class="icono-text">Imprimimos tus diseños 3D y te asesoramos para que tengas la mejor experiencia
+                <div class="icono-conteiner" data-aos="fade-up" data-aos-duration="1000"><img class="icono"
+                        src="img/3d-printer.svg" alt="impresiones"></div>
+                <h3 class="subtitulo" data-aos="fade-up" data-aos-duration="1000">Imprimimos tus diseños 3D</h3>
+                <div class="icono-text" data-aos="fade-up" data-aos-duration="1000">Imprimimos tus diseños 3D y te
+                    asesoramos para que tengas la mejor experiencia
                     posible. Cantactate con nosotros y pedinos presupuesto.</div>
             </div>
             <div class="cards-home">
-                <div class="icono-conteiner"><img class="icono" src="img/diseno-3d.svg" alt="3d-design"></div>
-                <h3 class="subtitulo">Diseñamos tus ideas</h3>
-                <div class="icono-text">Realizamos tus diseños 3D en caso de no contar con experiencia en diseño 3D.
+                <div class="icono-conteiner" data-aos="fade-up" data-aos-duration="1000"><img class="icono"
+                        src="img/diseno-3d.svg" alt="3d-design"></div>
+                <h3 class="subtitulo" data-aos="fade-up" data-aos-duration="1000">Diseñamos tus ideas</h3>
+                <div class="icono-text" data-aos="fade-up" data-aos-duration="1000">Realizamos tus diseños 3D en caso de
+                    no contar con experiencia en diseño 3D.
                     Cantactate con nosotros y pedinos presupuesto.</div>
             </div>
             <div class="cards-home">
-                <div class="icono-conteiner"><img class="icono" src="img/reparar.svg" alt="fix"></div>
-                <h3 class="subtitulo">Reparamos tus impresoras</h3>
-                <div class="icono-text">Si sos nuevo en el mundo 3D y necesitas apoyo tecnico podemos calibrar y/o
+                <div class="icono-conteiner" data-aos="fade-up" data-aos-duration="1000"><img class="icono"
+                        src="img/reparar.svg" alt="fix"></div>
+                <h3 class="subtitulo" data-aos="fade-up" data-aos-duration="1000">Reparamos tus impresoras</h3>
+                <div class="icono-text" data-aos="fade-up" data-aos-duration="1000">Si sos nuevo en el mundo 3D y
+                    necesitas apoyo tecnico podemos calibrar y/o
                     reparar tu impresora 3D. No dudes en consultarnos.</div>
             </div>
         </div>
     </section>
-    <footer class="footer footer-sin-grid">
-        <span>moll3D Todos los derechos reservados</span>
-        <img src="img/instagram W&B.svg" alt="logo" width="30" height="30">
-        <img src="img/whatsapp W&B.svg" alt="logo" width="30" height="30">
-        <img src="img/gmail W&B.svg" alt="logo" width="30" height="30">
+    <footer>
+        <div class="footer footer-sin-grid">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2>Moll3D</h2>
+                <p>
+                    Capital,<br>San Juan,<br>Argentina <br><br><strong>Teléfono: </strong> +54 264 4747261
+                    <br><strong>Email: </strong>impmoll3d@gmail.com
+                </p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <h2>Seguinos en nuestras redes</h2>
+                <p><a href="https://www.instagram.com/moll_3d/" target="_blank"><img src="img/instagram W&B.svg"
+                            alt="logo" width="30" height="30"></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer footer-sin-grid">
+            <span class="footer-bottom">&copy;Copyright Moll3D. All
+                Rights Reserved</span>
+            <span class="footer-bottom">Developed by <a class="footer-link"
+                    href="https://www.linkedin.com/in/diego-moll-34a52a183" target="_blank">Diego
+                    Moll</a></span>
+        </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

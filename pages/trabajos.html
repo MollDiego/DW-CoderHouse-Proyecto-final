@@ -9,6 +9,7 @@
     <meta name="keywords" content="Trabajos 3D, impresiones en 3D, macetas 3D, amoung us 3D">
     <title>Nuestros trabajos</title>
     <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
@@ -18,6 +19,8 @@
 <body>
     <header>
         <img src="../img/logo.png" alt="logo">
+        <input class="check" type="checkbox" name="menu" id="checked">
+        <label for="checked"><img class="menu" src="../img/menu-hamburgesa.svg" alt="menu hamburgesa"> </label>
         <nav>
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
@@ -31,7 +34,12 @@
     <div class="container-fluid background">
         <h1 class="titulo titulo--blue">NUESTROS TRABAJOS</h1>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide w-50 mb-5 mx-auto" data-ride="carousel">
+    <div class="text-trabajo">
+        <p>Te mostramos algunas de las cosas que imprimimos en Moll3D. Todas ellas están hechas con PLA y pintadas con
+            acrílico cubierto con un esmalte que le da más vida útil a las piezas evitando que las mismas se desgasten.
+        </p>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide w-75 mb-5 mx-auto" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -40,16 +48,16 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="3000">
-                <img src="../img/among_2.png" class="d-block w-100" alt="Among Us">
+                <img src="../img/among_2.jpg" class="d-block w-100" alt="Among Us">
             </div>
             <div class="carousel-item" data-interval="4000">
-                <img src="../img/maceta1.png" class="d-block w-100" alt="Maceta 1">
+                <img src="../img/maceta1.jpg" class="d-block w-100" alt="Maceta 1">
             </div>
             <div class="carousel-item" data-interval="4000">
-                <img src="../img/auriculares.png" class="d-block w-100" alt="soporte de auriculares">
+                <img src="../img/auriculares.jpg" class="d-block w-100" alt="soporte de auriculares">
             </div>
             <div class="carousel-item" data-interval="4000">
-                <img src="../img/maceta2.png" class="d-block w-100" alt="Maceta 2">
+                <img src="../img/maceta2.jpg" class="d-block w-100" alt="Maceta 2">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -61,16 +69,34 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="container d-flex flex-column">
+    <div class="container d-flex flex-column pb-5">
         <h3 class="text-white align-self-center">¡No dudes en consultarnos presupuesto!</h3>
-        <a class="btn btn-primary mt-2 mb-2 align-self-center" href="contacto.html">Contactanos</a>
+        <a class="btn btn-primary mt-4 mb-4 align-self-center" href="contacto.html">Contactanos</a>
 
     </div>
-    <footer class="footer footer-sin-grid">
-        <span>moll3D Todos los derechos reservados</span>
-        <img src="../img/instagram W&B.svg" alt="logo" width="30" height="30">
-        <img src="../img/whatsapp W&B.svg" alt="logo" width="30" height="30">
-        <img src="../img/gmail W&B.svg" alt="logo" width="30" height="30">
+    <footer>
+        <div class="footer footer-sin-grid footer-boots">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="h4 font-weight-bold">Moll3D</h2>
+                <p>
+                    Capital,<br>San Juan,<br>Argentina <br><br><strong>Teléfono: </strong> +54 264 4747261
+                    <br><strong>Email: </strong>impmoll3d@gmail.com
+                </p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="h4 font-weight-bold">Seguinos en nuestras redes</h2>
+                <p><a href="https://www.instagram.com/moll_3d/" target="_blank"><img src="../img/instagram W&B.svg"
+                            alt="logo" width="30" height="30"></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer footer-sin-grid">
+            <span class="footer-bottom">&copy;Copyright Moll3D. All
+                Rights Reserved</span>
+            <span class="footer-bottom">Developed by <a class="footer-link"
+                    href="https://www.linkedin.com/in/diego-moll-34a52a183" target="_blank">Diego
+                    Moll</a></span>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -78,6 +104,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

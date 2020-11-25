@@ -8,6 +8,7 @@
     <meta name="keywords" content="Frontend, Bioingeniero, diseñador 3D, Ingeniero Quimico">
     <title>Conocenos</title>
     <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -15,6 +16,8 @@
 <body>
     <header>
         <img src="../img/logo.png" alt="logo">
+        <input class="check" type="checkbox" name="menu" id="checked">
+        <label for="checked"><img class="menu" src="../img/menu-hamburgesa.svg" alt="menu hamburgesa"> </label>
         <nav>
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
@@ -31,9 +34,10 @@
         </div>
         <div class="flex-colum">
             <div class="card-conteiner card-conteiner-conocenos">
-                <img src="../img/diego.png" alt="Diego">
-                <div class="text-conteiner text-conteiner-lg">
-                    <h2>Diego Moll</h2>
+                <img class="img-conocenos" data-aos="fade-up" data-aos-duration="1000" src="../img/diego.png"
+                    alt="Diego">
+                <div data-aos="fade-up" data-aos-duration="1000" class="text-conteiner text-conteiner-lg">
+                    <h2 class="name-conocenos">Diego Moll</h2>
                     <h3>Bioingeniero y desarrollador Frontend</h3>
                     <p>Diego empezó con el emprendimiento en 2018, primiero armó su primera impresora 3D viendo
                         tutoriales
@@ -44,8 +48,8 @@
                 </div>
             </div>
             <div class="card-conteiner card-conteiner-conocenos">
-                <img src="../img/leo.png" alt="Leo">
-                <div class="text-conteiner text-conteiner-lg">
+                <img class="img-conocenos" data-aos="fade-up" data-aos-duration="1000" src="../img/leo.png" alt="Leo">
+                <div data-aos="fade-up" data-aos-duration="1000" class="text-conteiner text-conteiner-lg">
                     <h2>Leandro Moll</h2>
                     <h3>Estudiante de Ing. Quimica</h3>
                     <p>Leandro se unió al staff en el año 2020 creando una pagina de Instagram desde la cual Encargado
@@ -56,12 +60,32 @@
             </div>
         </div>
     </section>
-    <footer class="footer footer-sin-grid">
-        <span>moll3D Todos los derechos reservados</span>
-        <img src="../img/instagram W&B.svg" alt="logo" width="30" height="30">
-        <img src="../img/whatsapp W&B.svg" alt="logo" width="30" height="30">
-        <img src="../img/gmail W&B.svg" alt="logo" width="30" height="30">
+    <footer>
+        <div class="footer footer-sin-grid">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <h2>Moll3D</h2>
+                <p>
+                    Capital,<br>San Juan,<br>Argentina <br><br><strong>Teléfono: </strong> +54 264 4747261
+                    <br><strong>Email: </strong>impmoll3d@gmail.com
+                </p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <h2>Seguinos en nuestras redes</h2>
+                <p><a href="https://www.instagram.com/moll_3d/" target="_blank"><img src="../img/instagram W&B.svg"
+                            alt="logo" width="30" height="30"></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer footer-sin-grid">
+            <span class="footer-bottom">&copy;Copyright Moll3D. All Rights Reserved</span>
+            <span class="footer-bottom">Developed by <a class="footer-link"
+                    href="https://www.linkedin.com/in/diego-moll-34a52a183" target="_blank">Diego Moll</a></span>
+        </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

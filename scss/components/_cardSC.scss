@@ -53,14 +53,27 @@ $color-conocenos: gray;
         justify-content: center;
     }
     .card-conteiner-servicio{
-        @include sizes(300px,500px );
+        @include sizes(300px,350px );
     }
 
     .card-conteiner-conocenos{
-        @include sizes(400px, 550px);
+        @include sizes(300px, 550px);
+    }
+
+    .img-conocenos{
+        width: 100px;
+    }
+
+    .text-conteiner{
+        margin: 10px;
+    }
+
+    .name-conocenos{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .text-conteiner-lg{
-        width: 350px;
+        width: 280px;
     }
 }

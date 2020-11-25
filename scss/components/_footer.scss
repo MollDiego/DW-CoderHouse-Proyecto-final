@@ -2,21 +2,48 @@
 @import '../utilities/mixins';
 
 .footer{
-    @include flexRow(center);
+    @include flexRow(space-between);
     align-items: center;
-    background-color: $color-negro;
-    color: $color-blanco;
-    height: 50px;
-    width: 100%;
+    background-color: $color-blanco;
+    color: $color-negro;
+    height: auto;
+    width: auto;
+    padding-left: 100px;
+    padding-right: 100px;
     bottom: 0;
+}
+
+.footer-boots{
+    padding-top: 20px;
 }
 
 .footer-grid{
     grid-area: footer;
-    position: absolute;
 }
 
 .footer-sin-grid{    
     position: relative;
 }
 
+.footer-bottom{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: rgb(109, 31, 31);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+    .footer{
+        @include flexCol(space-around);
+        align-items: center;
+        padding-left: 30px;
+    padding-right: 30px;
+    }
+    .footer-bottom{
+        text-align: center;
+    }
+}

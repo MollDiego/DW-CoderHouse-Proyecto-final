@@ -3,3 +3,9 @@
     flex-direction: row;
     justify-content: $justify;    
 }
+
+@mixin flexCol($justify) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;    
+}

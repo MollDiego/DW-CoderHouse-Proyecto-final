@@ -12,10 +12,17 @@
 
 .cards-content-home{
     @include flexRow(space-around);
+    padding-bottom: 50px;
 }
 
 .cards-home{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media only screen and (max-width:768px){
+    .cards-content-home{
+        @include flexCol(space-around)
+    }
 }
